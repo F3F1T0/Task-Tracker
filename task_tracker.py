@@ -35,7 +35,7 @@ def main():
 
     # Subcommand "delete"
     delete_parser = subparsers.add_parser("delete", help = "Delete a task")
-    delete_parser.add_argument("id", help="id of the task to remove.")
+    delete_parser.add_argument("id", type=int, help="id of the task to remove.")
 
     # Parse the arguments
     args = parser.parse_args()
